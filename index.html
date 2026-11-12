@@ -1,0 +1,1076 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Навигатор инноватора - Презентация</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="presentation-wrapper">
+        <!-- Шапка общая для всех слайдов -->
+        <div class="page">
+            <div class="hat">
+                <img class="logo" src="./logo.png" alt="Навигатор инноватора">
+                <div class="slide-nav">
+                    <button class="dot active" data-slide="0" title="1. Проект и заявитель" aria-label="1. Проект и заявитель"></button>
+                    <button class="dot" data-slide="1" title="2. Проблема и потребитель" aria-label="2. Проблема и потребитель"></button>
+                    <button class="dot" data-slide="2" title="3. Продукт и ценность" aria-label="3. Продукт и ценность"></button>
+                    <button class="dot" data-slide="3" title="4. Технология и интеллектуальный вклад" aria-label="4. Технология и интеллектуальный вклад"></button>
+                    <button class="dot" data-slide="4" title="5. Задел и права на РИД" aria-label="5. Задел и права на РИД"></button>
+                    <button class="dot" data-slide="5" title="6. Рынок и подтверждение спроса" aria-label="6. Рынок и подтверждение спроса"></button>
+                    <button class="dot" data-slide="6" title="7. Аналоги и преимущества" aria-label="7. Аналоги и преимущества"></button>
+                    <button class="dot" data-slide="7" title="8. Коммерциализация" aria-label="8. Коммерциализация"></button>
+                    <button class="dot" data-slide="8" title="9. Результат и план работ" aria-label="9. Результат и план работ"></button>
+                    <button class="dot" data-slide="9" title="10. Бюджет" aria-label="10. Бюджет"></button>
+                    <button class="dot" data-slide="10" title="11. Заявитель и команда" aria-label="11. Заявитель и команда"></button>
+                    <button class="dot" data-slide="11" title="12. Итог" aria-label="12. Итог"></button>
+                    <button class="dot" data-slide="12" title="13. Контакты" aria-label="13. Контакты"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Контейнер для слайдов -->
+        <div class="slides-container" id="slidesContainer">
+            <!-- Слайд 1: Проект и заявитель (Титульный лист). Не забудьте про тизер -->
+            <div class="slide active" data-slide="0">
+                <div class="page">
+                    <div class="slide-content">
+                        <div class="cyber-loader-full">
+                            <div class="cyber-loader-rings">
+                                <div class="cyber-loader-ring cyber-loader-ring-1"></div>
+                                <div class="cyber-loader-ring cyber-loader-ring-2"></div>
+                                <div class="cyber-loader-ring cyber-loader-ring-3"></div>
+                                <div class="cyber-loader-center"></div>
+                            </div>
+                            <span class="cyber-loader-text">Загрузка</span>
+                        </div>
+                        <div class="typewriter-container">
+                            <h1 class="typewriter-title">
+                                <span id="typewriter"></span>
+                                <span class="cursor">|</span>
+                            </h1>
+                            <span class="typewriter-placeholder" id="placeholder"></span>
+                        </div>
+                        <div class="title-slide-content">
+                            <p class="applicant-info">Создание портативного диагностического комплекса для предсменных осмотров</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 2: Проблема и потребитель -->
+            <div class="slide" data-slide="1">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">02</span>Проблема и потребитель</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <div class="content-grid-2">
+                                    <div class="problem-block">
+                                        <h3>Проблема</h3>
+                                        <p>Традиционные предсменные осмотры на предприятиях (особенно в удаленных и вахтовых поселках) <strong>отнимают много времени</strong>, <strong>неудобны</strong> и <strong>не всегда объективны</strong>. Сотрудникам приходится тратить время на поездку в медпункт, а работодатель несет риски, связанные с человеческим фактором при допуске к работе.</p>
+                                    </div>
+                                    <div class="target-block">
+                                        <h3>Потребитель</h3>
+                                        <p><strong>B2B (Основной):</strong> Промышленные предприятия, строительные компании, логистические центры, вахтовые поселки.</p>
+                                        <p><strong>B2G:</strong> Государственные и муниципальные учреждения с большим штатом сотрудников.</p>
+                                        <p><strong>Пользователь:</strong> Сотрудник, проходящий осмотр. <strong>ЛПР:</strong> Руководитель отдела охраны труда или главный врач.</p>
+                                    </div>
+                                </div>
+                                <div class="key-fact">
+                                    <p><strong>Ключевой факт:</strong> 42% стартапов проваливаются, потому что их продукт никому не нужен. Наше решение подтверждено реальным спросом на рынке.</p>
+                                </div>
+                                <!-- Контейнер для линии из 8 SVG -->
+<div class="svg-line-container">
+    <img src="./pattern2.svg" alt="SVG 1" class="jumping-svg" style="--i: 0;">
+    <img src="./pattern3.svg" alt="SVG 2" class="jumping-svg" style="--i: 1;">
+    <img src="./pattern4.svg" alt="SVG 3" class="jumping-svg" style="--i: 2;">
+    <img src="./pattern5.svg" alt="SVG 4" class="jumping-svg" style="--i: 3;">
+    <img src="./pattern6.svg" alt="SVG 5" class="jumping-svg" style="--i: 4;">
+    <img src="./pattern7.svg" alt="SVG 6" class="jumping-svg" style="--i: 5;">
+    <img src="./pattern8.svg" alt="SVG 7" class="jumping-svg" style="--i: 6;">
+    <img src="./pattern9.svg" alt="SVG 8" class="jumping-svg" style="--i: 7;">
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 3: Продукт и ценность (на этом слайде включён 3D-фон) -->
+            <div class="slide" data-slide="2" data-three>
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">03</span>Продукт и ценность</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <h3>Что мы предлагаем</h3>
+                                <p class="product-description">
+                                    Портативный диагностический кейс для автоматизированного предсменного осмотра. Внутри — полный набор: <strong>тонометр, термометр, глюкометр, алкотестер</strong> и микроконтроллер с камерой.
+                                </p>
+                                <div class="value-proposition-box">
+                                    <h3>Ценностное предложение</h3>
+                                    <p>Мы, компания «PROНефть», помогаем <strong>промышленным предприятиям</strong> решить проблему <strong>длительных и неудобных предсменных осмотров</strong>, предлагая <strong>автономный и транспортабельный комплекс</strong>, который <strong>сокращает время осмотра до 7 минут</strong> за счет автоматизации и Face ID.</p>
+                                </div>
+                                <div class="features-grid">
+                                    <div class="feature-item"><h4>Быстро</h4><p>Полный цикл осмотра за 5-7 минут.</p></div>
+                                    <div class="feature-item"><h4>Автономно</h4><p>Работает без сети и розетки до 8 часов.</p></div>
+                                    <div class="feature-item"><h4>Объективно</h4><p>Автоматическая передача данных и Face ID.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 4: Технология и интеллектуальный вклад -->
+            <div class="slide" data-slide="3">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">04</span>Технология и интеллектуальный вклад</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <h3>Как это работает</h3>
+                                <div class="tech-workflow">
+                                    <div class="workflow-step">1. Пациент авторизуется через <strong>Face ID</strong> и проходит осмотр по инструкции.</div>
+                                    <div class="workflow-step">2. Встроенный микроконтроллер <strong>собирает данные</strong> со всех приборов и камеры.</div>
+                                    <div class="workflow-step">3. Данные передаются в <strong>облачный сервис</strong>, где формируется отчет.</div>
+                                    <div class="workflow-step">4. Медицинский сотрудник на <strong>онлайн-платформе</strong> проверяет отчет и выносит заключение.</div>
+                                </div>
+                                <h3>Наш интеллектуальный вклад</h3>
+                                <ul>
+                                    <li><strong>Аппаратная интеграция:</strong> Сборка и настройка аппаратного комплекса на базе готовых модулей ESP32 и периферии. Разработка схемы соединений и компоновки узлов внутри кейса.</li>
+                                    <li><strong>Программное обеспечение:</strong> Создание прошивки для кейса и облачной платформы для врачей.</li>
+                                    <li><strong>Конструкторское решение:</strong> Разработка 3D-модели кейса с учетом эргономики и защиты приборов.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 5: Задел и права на РИД -->
+            <div class="slide" data-slide="4">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">05</span>Задел и права на РИД</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <h3>Что уже сделано</h3>
+                                <div class="progress-grid">
+                                    <div class="progress-item"><h4>Разработан прототип</h4><p>Собрана и протестирована первая версия кейса.</p></div>
+                                    <div class="progress-item"><h4>Создана 3D-модель</h4><p>Готова 3D-модель корпуса для печати.</p></div>
+                                    <div class="progress-item"><h4>Готова схема соединений</h4><p>Разработана электрическая схема всех компонентов.</p></div>
+                                    <div class="progress-item"><h4>Проведены интервью</h4><p>Подтверждена проблема и получена обратная связь от ЦА.</p></div>
+                                </div>
+                                <hr>
+                                <h3>Права на РИД</h3>
+                                <p>Планируется регистрация программы для ЭВМ (облачная платформа и прошивка) и подача заявки на полезную модель (конструкция кейса). Весь код и конструкторская документация созданы командой проекта.</p>
+                                <div class="spinner-container">
+                                    <img src="./proto4.svg" alt="Декоративный паттерн" class="slide-pattern">
+                                    <img src="./proto5.svg" alt="Декоративный паттерн" class="slide-pattern">
+                                    <img src="./proto1.svg" alt="Декоративный паттерн" class="slide-pattern">
+                                    <img src="./proto2.svg" alt="Декоративный паттерн" class="slide-pattern">
+                                    <img src="./proto3.svg" alt="Декоративный паттерн" class="slide-pattern">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 6: Рынок и подтверждение спроса -->
+            <div class="slide" data-slide="5">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">06</span>Рынок и подтверждение спроса</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <div class="market-size-container">
+                                    <div class="market-circle tam">
+                                        <span class="market-label">TAM</span>
+                                        <span class="market-value">3,75 млрд</span>
+                                        <span class="market-desc">1,5 млн работников в отраслях с обязательными предсменными осмотрами</span>
+                                    </div>
+                                    <div class="market-circle sam">
+                                        <span class="market-label">SAM</span>
+                                        <span class="market-value">75 млн</span>
+                                        <span class="market-desc">в речном флоте ~120 тыс. работников, в морском ~260 тыс.</span>
+                                    </div>
+                                    <div class="market-circle som">
+                                        <span class="market-label">SOM</span>
+                                        <span class="market-value">1,25 млн ₽</span>
+                                        <span class="market-desc">среднесписочная численность ~600 человек</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="demand-confirmation">
+                                    <h3>Подтверждение спроса</h3>
+                                    <p>Проведено более 10 интервью с представителями ЦА (менеджеры, врачи). <strong>86% респондентов подтвердили остроту проблемы</strong> и выразили заинтересованность в пилотном проекте.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 7: Аналоги и преимущества -->
+            <div class="slide" data-slide="6">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">07</span>Аналоги и преимущества</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <table class="comparison-table full-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Критерий</th>
+                                            <th>Наш продукт</th>
+                                            <th>Димеко</th>
+                                            <th>MedMap</th>
+                                            <th>ЭСМО «Инспектор-1»</th>
+                                            <th>TouchMed</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Цена оборудования</td>
+                                            <td class="highlight">175 000 ₽</td>
+                                            <td>~179 000 ₽ (без глюкометра)</td>
+                                            <td>Франшиза от ~340 000 ₽</td>
+                                            <td>Не указана</td>
+                                            <td>~181 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Подписка на ПО</td>
+                                            <td class="highlight">25 000 ₽/год</td>
+                                            <td>3 000 ₽/мес + доплаты</td>
+                                            <td>Включена в аренду</td>
+                                            <td>Не указана</td>
+                                            <td>Не указана</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Установка/монтаж</td>
+                                            <td class="highlight">Не требуется</td>
+                                            <td>Нужен стол + розетка + интернет</td>
+                                            <td>Нужен стол + розетка + интернет</td>
+                                            <td>Настольный терминал</td>
+                                            <td>Нужна розетка 220 В + интернет</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Требования к эксплуатации</td>
+                                            <td class="highlight">Автономный, без сети</td>
+                                            <td>Стационарный</td>
+                                            <td>Стационарный</td>
+                                            <td>Стационарный</td>
+                                            <td>«Переносной», но требует сеть</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Поверка/обслуживание</td>
+                                            <td class="highlight">По факту, прозрачно</td>
+                                            <td>В составе ИТ-сопровождения</td>
+                                            <td>Включена в аренду</td>
+                                            <td>Не указана</td>
+                                            <td>Не указана</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплектация</td>
+                                            <td class="highlight">Полная (4 прибора)</td>
+                                            <td>Без глюкометра</td>
+                                            <td>Без глюкометра</td>
+                                            <td>Без глюкометра</td>
+                                            <td>Без глюкометра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Медицинские услуги</td>
+                                            <td>Зависит от модели (врач отдельно)</td>
+                                            <td>Не включены</td>
+                                            <td>Включены (врачи 24/7)</td>
+                                            <td>Не включены</td>
+                                            <td>Не включены</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Совокупная стоимость за 3 года</td>
+                                            <td class="highlight">250 000 ₽</td>
+                                            <td>~287 000 ₽</td>
+                                            <td>558 000 ₽</td>
+                                            <td>Нет данных</td>
+                                            <td>Нет данных</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="key-fact">
+                                    <p><strong>Мы успешно наладили сотрудничество с индустриальным партнёром АО "Северречфлот" и Югорским государственным университетом.</strong> Разработка прототипа назначена на первую половину 2027 года.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 8: Коммерциализация -->
+            <div class="slide" data-slide="7">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">08</span>Коммерциализация</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <h3>Бизнес-модель</h3>
+                                <p>Мы используем гибридную модель монетизации: <strong>«Бритва и лезвие» + Подписка (SaaS)</strong>.</p>
+                                <hr>
+                                <div class="revenue-model">
+                                    <div class="revenue-item">
+                                        <h4>Продажа оборудования</h4>
+                                        <p>Разовые продажи кейсов по цене <strong>197 000 ₽</strong>.</p>
+                                    </div>
+                                    <div class="revenue-item">
+                                        <h4>Подписка на ПО</h4>
+                                        <p>Ежегодная подписка на облачную платформу и техподдержку <strong>25 000 ₽/год</strong>.</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h3>Потоки доходов (прогноз на 3 года)</h3>
+                                <ul>
+                                    <li><strong>Год 1:</strong> 10 продаж кейсов (≈ 2 млн ₽) + подписка. <strong>Фокус:</strong> пилотные проекты.</li>
+                                    <li><strong>Год 2:</strong> 30 продаж (≈ 6 млн ₽) + подписка. <strong>Фокус:</strong> расширение базы клиентов.</li>
+                                    <li><strong>Год 3:</strong> 75 продаж (≈ 15 млн ₽) + подписка. <strong>Фокус:</strong> выход на федеральный уровень.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 9: Результат и план работ -->
+            <div class="slide" data-slide="8">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">09</span>Результат и план работ</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <h3>Ключевой результат гранта (12 месяцев)</h3>
+                                <p><strong>Создание и испытание финального прототипа (MVP2)</strong>, готового к коммерческим поставкам, с полным комплектом конструкторской и программной документации.</p>
+                                <hr>
+                                <h3>Дорожная карта (2 + 10 месяцев)</h3>
+                                <div class="roadmap">
+                                    <div class="roadmap-item">
+                                        <div class="roadmap-date">Месяц 1-2</div>
+                                        <div class="roadmap-content">
+                                            <h4>Подготовка</h4>
+                                            <p>Регистрация ООО, открытие счета, подача документов на РИД, закупка первой партии комплектующих.</p>
+                                        </div>
+                                    </div>
+                                    <div class="roadmap-item">
+                                        <div class="roadmap-date">Месяц 3-6</div>
+                                        <div class="roadmap-content">
+                                            <h4>Разработка MVP2</h4>
+                                            <p>Создание улучшенной версии кейса (эргономика, надежность), разработка и тестирование облачной платформы.</p>
+                                        </div>
+                                    </div>
+                                    <div class="roadmap-item">
+                                        <div class="roadmap-date">Месяц 7-10</div>
+                                        <div class="roadmap-content">
+                                            <h4>Тестирование</h4>
+                                            <p>Проведение пилотных испытаний на 2-3 предприятиях, доработка ПО и аппаратной части по результатам.</p>
+                                        </div>
+                                    </div>
+                                    <div class="roadmap-item">
+                                        <div class="roadmap-date">Месяц 11-12</div>
+                                        <div class="roadmap-content">
+                                            <h4>Завершение</h4>
+                                            <p>Подготовка итоговой отчетности, регистрация РИД, начало активных продаж.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 10: Бюджет -->
+            <div class="slide" data-slide="9">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">10</span>Бюджет</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <h3>Смета расходов (1 млн ₽)</h3>
+                                <table class="budget-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Статья затрат</th>
+                                            <th>Сумма, ₽</th>
+                                            <th>Обоснование</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Оплата труда</td>
+                                            <td>400 000</td>
+                                            <td>Зарплата 2 сотрудников (разработчик, инженер) в течение 10 мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Материальные затраты</td>
+                                            <td>350 000</td>
+                                            <td>Закупка комплектующих для 5 прототипов (микроконтроллеры, датчики, пластик, медтехника).</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сторонние услуги</td>
+                                            <td>200 000</td>
+                                            <td>Разработка дизайна облачной платформы, тестирование, сертификация.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Прочие расходы</td>
+                                            <td>50 000</td>
+                                            <td>Регистрация РИД, аренда 3D-принтера, канцелярские товары.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="budget-note"><strong>Ключевой принцип:</strong> каждый рубль направлен на создание коммерчески готового продукта, а не на «освоение бюджета». Соблюдены лимиты ФСИ (зарплата до 100 000 ₽/мес, оборудование до 150 000 ₽/ед.).</p>
+                                <div class="spinner-container">
+    <!-- 1. Крайний левый (самый маленький) -->
+    <div class="spinner-wrapper size-sm">
+        <img src="./pattern12.svg" alt="SVG 1" class="spinner-svg spinner-1">
+    </div>
+    
+    <!-- 2. Левый (средний) -->
+    <div class="spinner-wrapper size-md">
+        <img src="./pattern11.svg" alt="SVG 2" class="spinner-svg spinner-2">
+    </div>
+    
+    <!-- 3. Центральный (самый крупный) -->
+    <div class="spinner-wrapper size-lg">
+        <img src="./pattern10.svg" alt="SVG 3" class="spinner-svg spinner-3">
+    </div>
+    
+    <!-- 4. Правый (средний) -->
+    <div class="spinner-wrapper size-md">
+        <img src="./pattern11.svg" alt="SVG 4" class="spinner-svg spinner-4">
+    </div>
+    
+    <!-- 5. Крайний правый (самый маленький) -->
+    <div class="spinner-wrapper size-sm">
+        <img src="./pattern13.svg" alt="SVG 5" class="spinner-svg spinner-5">
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 11: Заявитель и команда -->
+            <div class="slide" data-slide="10">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">11</span>Заявитель и команда</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <h3>Почему мы?</h3>
+                                <div class="team-grid team-grid-7">
+                                    <div class="team-member leader">
+                                        <div class="member-avatar">01</div>
+                                        <h4>Федорова Александра</h4>
+                                        <p><strong>Руководитель проекта</strong></p>
+                                        <p>Координация, разработка ПО, аппаратная интеграция. Опыт в embedded-разработке более 2 лет.</p>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-avatar">02</div>
+                                        <h4>Рыжков Артём</h4>
+                                        <p><strong>Инженер-конструктор</strong></p>
+                                        <p>3D-моделирование, проектирование корпуса, сборка прототипов.</p>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-avatar">03</div>
+                                        <h4>Гарифзянов Эмиль</h4>
+                                        <p><strong>Разработчик ПО</strong></p>
+                                        <p>Разработка облачной платформы, API, интеграция с медицинскими приборами.</p>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-avatar">04</div>
+                                        <h4>Солдаткин Роман</h4>
+                                        <p><strong>Медицинский консультант</strong></p>
+                                        <p>Валидация данных, соответствие медицинским стандартам и требованиям.</p>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-avatar">05</div>
+                                        <h4>Дзирун Николай</h4>
+                                        <p><strong>Специалист по схемотехнике</strong></p>
+                                        <p>Разработка электрических схем, пайка, тестирование аппаратной части.</p>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-avatar">06</div>
+                                        <h4>Тараканова Мария</h4>
+                                        <p><strong>Дизайнер UI/UX</strong></p>
+                                        <p>Дизайн интерфейса облачной платформы и мобильного приложения.</p>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-avatar">07</div>
+                                        <h4>Зорин Кирилл</h4>
+                                        <p><strong>Специалист по продажам</strong></p>
+                                        <p>Поиск клиентов, проведение пилотных проектов, развитие партнерской сети.</p>
+                                    </div>
+                                </div>
+                                <p class="team-advantage"><strong>Наше преимущество:</strong> Уникальная комбинация компетенций в области программирования, аппаратного дизайна, медицины и продаж.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 12: Итог -->
+            <div class="slide" data-slide="11">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">12</span>Итог</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <h3>Что мы создаем и почему это важно</h3>
+                                <hr>
+                                <div class="summary-points">
+                                    <div class="summary-item">
+                                        <p><strong>Решаем реальную проблему:</strong> Ускоряем и автоматизируем предсменные медосмотры, снижая риски для бизнеса.</p>
+                                    </div>
+                                    <div class="summary-item">
+                                        <p><strong>Предлагаем конкурентноспособное решение:</strong> Портативный, автономный комплекс с Face ID и облачной платформой.</p>
+                                    </div>
+                                    <div class="summary-item">
+                                        <p><strong>Имеем четкий план:</strong> За 12 месяцев создадим готовый к продаже продукт и начнем коммерциализацию.</p>
+                                    </div>
+                                    <div class="summary-item">
+                                        <p><strong>Обладаем сильной командой:</strong> Специалисты с необходимыми компетенциями и опытом для реализации проекта.</p>
+                                    </div>
+                                </div>
+                                <div class="svg-line-container">
+    <img src="./pattern9.svg" alt="SVG 1" class="jumping-svg" style="--i: 0;">
+    <img src="./pattern7.svg" alt="SVG 2" class="jumping-svg" style="--i: 1;">
+    <img src="./pattern6.svg" alt="SVG 3" class="jumping-svg" style="--i: 2;">
+    <img src="./pattern5.svg" alt="SVG 4" class="jumping-svg" style="--i: 3;">
+    <img src="./pattern3.svg" alt="SVG 5" class="jumping-svg" style="--i: 4;">
+    <img src="./pattern4.svg" alt="SVG 6" class="jumping-svg" style="--i: 5;">
+    <img src="./pattern8.svg" alt="SVG 7" class="jumping-svg" style="--i: 6;">
+    <img src="./pattern2.svg" alt="SVG 8" class="jumping-svg" style="--i: 7;">
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайд 13: Контакты -->
+            <div class="slide" data-slide="12">
+                <div class="page">
+                    <div class="slide-content">
+                        <h1 class="slide-title"><span class="slide-num">13</span>Контакты</h1>
+                        <div class="cyber-full-box slide-box">
+                            <div class="cyber-glitch"></div>
+                            <div class="cyber-scanline"></div>
+                            <div class="cyber-content slide-body">
+                                <div class="contact-container">
+                                    <div class="contact-info-block">
+                                        <h3>Будем рады сотрудничеству</h3>
+                                        <p><strong>Заявитель:</strong> Федорова Александра</p>
+                                        <p><strong>Телефон:</strong> +7 (965) 834-80-56</p>
+                                        <p><strong>Email:</strong> zeimstral@gmail.com</p>
+                                    </div>
+                                    <div class="qr-code-block">
+                                        <p>QR-код для связи</p>
+                                        <img src="./qr-code.png" alt="QR-код" style="width: 150px; height: 150px; border-radius: 8px; border: none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Управление слайдами (фиксированное) - БЕГУЩАЯ СТРОКА -->
+        <div class="slide-controls-wrapper">
+            <div class="slide-controls">
+                <div class="marquee-container">
+                    <div class="marquee-track" id="marqueeTrack">
+                        <span class="marquee-item">ХАНТЫ-МАНСИЙСК</span>
+                        <span class="marquee-divider">|</span>
+                        <span class="marquee-item">86</span>
+                        <span class="marquee-divider">|</span>
+                        <span class="marquee-item">ЮГОРСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ</span>
+                        <span class="marquee-divider">|</span>
+                        <span class="marquee-item">ИШЦТ</span>
+                        <span class="marquee-divider">|</span>
+                        <span class="marquee-item">НЕФТЯНКА</span>
+                        <span class="marquee-divider">|</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контейнер для 3D (рендеринг в него) -->
+    <div id="three-container"></div>
+
+    <script type="module">
+        import { animate } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+
+        // ===== БЕГУЩАЯ СТРОКА С АВТО-РАСЧЁТОМ =====
+        function setupMarquee() {
+            const track = document.getElementById('marqueeTrack');
+            if (!track) return;
+
+            const originalHTML = track.innerHTML;
+            track.innerHTML = originalHTML + originalHTML;
+
+            const apply = () => {
+                const copyWidth = track.scrollWidth / 2;
+                const speed = 80;
+                const duration = Math.max(copyWidth / speed, 5);
+
+                const styleId = 'marquee-keyframes';
+                let style = document.getElementById(styleId);
+                if (!style) {
+                    style = document.createElement('style');
+                    style.id = styleId;
+                    document.head.appendChild(style);
+                }
+                style.textContent = `
+                    @keyframes marquee-scroll-js {
+                        0% { transform: translateX(0); }
+                        100% { transform: translateX(-${copyWidth}px); }
+                    }
+                `;
+
+                track.style.animation = `marquee-scroll-js ${duration}s linear infinite`;
+                track.style.willChange = 'transform';
+            };
+
+            requestAnimationFrame(() => {
+                apply();
+                if (document.fonts && document.fonts.ready) {
+                    document.fonts.ready.then(apply);
+                }
+            });
+        }
+
+        // ===== SLIDER LOGIC с управлением 3D =====
+        class PresentationSlider {
+            constructor() {
+                this.slides = document.querySelectorAll('.slide');
+                this.dots = document.querySelectorAll('.dot');
+                this.currentSlide = 0;
+                this.totalSlides = this.slides.length;
+                this.isAnimating = false;
+                this.threeContainer = document.getElementById('three-container');
+
+                this.init();
+            }
+
+            init() {
+                this.updateUI();
+
+                this.dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goTo(index));
+                });
+
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        this.next();
+                    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        this.prev();
+                    }
+                });
+
+                let touchStartX = 0;
+                let touchEndX = 0;
+
+                document.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                });
+
+                document.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    const diff = touchStartX - touchEndX;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) this.next();
+                        else this.prev();
+                    }
+                });
+
+                this.updateThreeVisibility();
+            }
+
+            goTo(index) {
+                if (this.isAnimating || index === this.currentSlide) return;
+                this.isAnimating = true;
+
+                const currentSlide = this.slides[this.currentSlide];
+                const nextSlide = this.slides[index];
+                const direction = index > this.currentSlide ? 1 : -1;
+
+                animate(currentSlide, {
+                    opacity: [1, 0],
+                    x: [0, direction * -50],
+                    scale: [1, 0.95]
+                }, {
+                    duration: 0.4,
+                    ease: "easeIn"
+                });
+
+                nextSlide.style.display = 'flex';
+                nextSlide.style.opacity = '0';
+                nextSlide.style.transform = `translateX(${direction * 50}px) scale(0.95)`;
+
+                animate(nextSlide, {
+                    opacity: [0, 1],
+                    x: [direction * 50, 0],
+                    scale: [0.95, 1]
+                }, {
+                    duration: 0.5,
+                    ease: "easeOut",
+                    onComplete: () => {
+                        currentSlide.style.display = 'none';
+                        this.isAnimating = false;
+                        this.updateThreeVisibility();
+                    }
+                });
+
+                this.currentSlide = index;
+                this.updateUI();
+            }
+
+            next() {
+                this.goTo((this.currentSlide + 1) % this.totalSlides);
+            }
+
+            prev() {
+                this.goTo((this.currentSlide - 1 + this.totalSlides) % this.totalSlides);
+            }
+
+            updateUI() {
+                this.dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentSlide);
+                });
+
+                this.slides.forEach((slide, index) => {
+                    slide.style.display = index === this.currentSlide ? 'flex' : 'none';
+                    slide.style.opacity = index === this.currentSlide ? '1' : '0';
+                });
+            }
+
+            updateThreeVisibility() {
+                if (!this.threeContainer) return;
+                const active = this.slides[this.currentSlide];
+                this.threeContainer.classList.toggle('visible', active.hasAttribute('data-three'));
+            }
+        }
+
+        // ===== ЗАПУСК СЛАЙДЕРА =====
+        const slider = new PresentationSlider();
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupMarquee);
+        } else {
+            setupMarquee();
+        }
+
+        // ===== TYPEWRITER =====
+        class Typewriter {
+            constructor(element, placeholderElement, cursorElement) {
+                this.element = element;
+                this.placeholder = placeholderElement;
+                this.cursor = cursorElement;
+                this.strings = [];
+                this.currentStringIndex = 0;
+                this.currentCharIndex = 0;
+                this.isDeleting = false;
+                this.speed = 80;
+                this.deleteSpeed = 40;
+                this.pauseDelay = 1500;
+            }
+
+            addString(text) {
+                this.strings.push(text);
+                return this;
+            }
+
+            setSpeed(speed) {
+                this.speed = speed;
+                return this;
+            }
+
+            setPauseTime(time) {
+                this.pauseDelay = time;
+                return this;
+            }
+
+            start() {
+                const longestText = this.strings.reduce((a, b) => a.length > b.length ? a : b);
+                if (this.placeholder) {
+                    this.placeholder.textContent = longestText;
+                }
+                if (this.cursor) {
+                    this.cursor.style.opacity = '1';
+                }
+                this.type();
+            }
+
+            type() {
+                const current = this.strings[this.currentStringIndex];
+
+                if (this.isDeleting) {
+                    this.element.textContent = current.substring(0, this.currentCharIndex - 1);
+                    this.currentCharIndex--;
+
+                    if (this.currentCharIndex === 0) {
+                        this.isDeleting = false;
+                        this.currentStringIndex = (this.currentStringIndex + 1) % this.strings.length;
+                        setTimeout(() => this.type(), 500);
+                        return;
+                    }
+
+                    setTimeout(() => this.type(), this.deleteSpeed);
+                } else {
+                    this.element.textContent = current.substring(0, this.currentCharIndex + 1);
+                    this.currentCharIndex++;
+
+                    if (this.currentCharIndex === current.length) {
+                        setTimeout(() => {
+                            this.isDeleting = true;
+                            this.type();
+                        }, this.pauseDelay);
+                        return;
+                    }
+
+                    setTimeout(() => this.type(), this.speed);
+                }
+            }
+        }
+
+        const typewriter = new Typewriter(
+            document.getElementById('typewriter'),
+            document.getElementById('placeholder'),
+            document.querySelector('.cursor')
+        );
+
+        typewriter
+            .addString('PROНефть')
+            .addString('Заявитель: Федорова Александра')
+            .addString('Грант: «Студенческий стартап», 8-я очередь')
+            .setSpeed(60)
+            .setPauseTime(2000)
+            .start();
+
+        const cursor = document.querySelector('.cursor');
+        if (cursor) {
+            animate(cursor, {
+                opacity: [1, 0, 1]
+            }, {
+                duration: 0.8,
+                repeat: Infinity,
+                ease: "step-end"
+            });
+        }
+    </script>
+
+    <script type="module">
+    // ===== 3D СЦЕНА (рендеринг в #three-container) =====
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+    const CONFIG = {
+        rotationAxis: 'y',
+        rotationSpeed: 0.01,
+        customAxis: new THREE.Vector3(0.5, 0.5, 0.5),
+        autoRotateCamera: false,
+        cameraPosition: new THREE.Vector3(0, 0, 5),
+        backgroundColor: 0xFFFFFF,
+        modelPath: './models/boom.glb'
+    };
+
+    const container = document.getElementById('three-container');
+    if (!container) {
+        console.error('Контейнер #three-container не найден!');
+    }
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(CONFIG.backgroundColor);
+
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.copy(CONFIG.cameraPosition);
+
+    const renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: true
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+    Object.assign(renderer.domElement.style, {
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        width: '100%',
+        height: '100%',
+        pointerEvents: 'none'
+    });
+
+    container.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.autoRotate = CONFIG.autoRotateCamera;
+    controls.autoRotateSpeed = 2.0;
+    controls.target.set(0, 0, 0);
+    controls.update();
+
+    scene.add(new THREE.AmbientLight(0x404060, 0.6));
+
+    const mainLight = new THREE.DirectionalLight(0xC80860, 1.5);
+    mainLight.position.set(5, 10, 7);
+    mainLight.castShadow = true;
+    scene.add(mainLight);
+
+    const backLight = new THREE.DirectionalLight(0x1908CA, 0.8);
+    backLight.position.set(-5, 2, -5);
+    scene.add(backLight);
+
+    const fillLight = new THREE.DirectionalLight(0x8C227C, 0.4);
+    fillLight.position.set(0, -5, 5);
+    scene.add(fillLight);
+
+    const rimLight = new THREE.DirectionalLight(0xFFFFFF, 0.3);
+    rimLight.position.set(-3, 1, -3);
+    scene.add(rimLight);
+
+    const loader = new GLTFLoader();
+    let model = null;
+    let modelLoaded = false;
+
+    loader.load(
+        CONFIG.modelPath,
+        (gltf) => {
+            model = gltf.scene;
+
+            const box = new THREE.Box3().setFromObject(model);
+            const center = box.getCenter(new THREE.Vector3());
+            model.position.sub(center);
+            model.rotation.set(0, 0, 0);
+
+            scene.add(model);
+            modelLoaded = true;
+        },
+        undefined,
+        (error) => {
+            console.warn('Модель не загружена, показываю заглушку:', error);
+            createFallbackModel();
+        }
+    );
+
+    function createFallbackModel() {
+        const geometry = new THREE.TorusKnotGeometry(1, 0.3, 64, 8);
+        const material = new THREE.MeshStandardMaterial({
+            color: 0xC80860,
+            metalness: 0.8,
+            roughness: 0.2,
+            emissive: 0x1908CA,
+            emissiveIntensity: 0.15
+        });
+        model = new THREE.Mesh(geometry, material);
+        model.castShadow = true;
+        scene.add(model);
+        modelLoaded = true;
+    }
+
+    function rotateModel() {
+        if (!model || !modelLoaded) return;
+        const speed = CONFIG.rotationSpeed;
+
+        switch (CONFIG.rotationAxis) {
+            case 'x': model.rotation.x += speed; break;
+            case 'y': model.rotation.y += speed; break;
+            case 'z': model.rotation.z += speed; break;
+            case 'custom': {
+                const axis = CONFIG.customAxis.clone().normalize();
+                const quaternion = new THREE.Quaternion().setFromAxisAngle(axis, speed);
+                model.quaternion.multiplyQuaternions(quaternion, model.quaternion);
+                break;
+            }
+            default: model.rotation.y += speed;
+        }
+    }
+
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    window.addEventListener('keydown', (e) => {
+        switch (e.key) {
+            case '1': CONFIG.rotationAxis = 'x'; break;
+            case '2': CONFIG.rotationAxis = 'y'; break;
+            case '3': CONFIG.rotationAxis = 'z'; break;
+            case '4': CONFIG.rotationAxis = 'custom'; break;
+            case 'ArrowUp': CONFIG.rotationSpeed += 0.005; break;
+            case 'ArrowDown': CONFIG.rotationSpeed = Math.max(0.001, CONFIG.rotationSpeed - 0.005); break;
+            case 'f':
+            case 'F':
+                camera.position.set(0, 0, 5);
+                controls.target.set(0, 0, 0);
+                controls.update();
+                break;
+        }
+    });
+
+    function animate3D() {
+        requestAnimationFrame(animate3D);
+        rotateModel();
+        controls.update();
+        renderer.render(scene, camera);
+    }
+
+    animate3D();
+</script>
+</body>
+</html>
